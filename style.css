@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+    max-width: 1580px;
+}
+
+body{
+    background-color: #190919;
+    color: 	#DFB6B2;
+    
+}
+
+
+/* Styles NavBar */
+
+nav{
+    display: flex;
+   position: sticky;
+    height: 80px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #FBE4D8;
+    list-style: none;
+}
+
+ul{
+    
+    list-style: none;
+    width: 100%;
+    
+    
+}
+
+li a{
+    margin-top: 3%;
+    text-decoration: none;
+    color: 	#DFB6B2;
+    font-family:Open Sans;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+li a:hover{
+    color: #ffffff;
+    text-shadow: 0.1em 0.1em 0.2em #ffefdb;
+    transition: 0.5s;
+}
+
+/* ______________________________________________________ */
+/* Main */
+
+main {
+    padding: 50px
+}
+
+.apre {
+    color: #DFB6B2;
+    font-size: 25px;
+}
+span {
+    color: #854F6C;
+}
+
+/* ______________________________________________________ */
+/* Section - Linguagens */
+
+ .titulo {
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #FBE4D8;
+ }
