@@ -26,8 +26,9 @@ nav{
     align-items: center;
     justify-content: center;
     justify-content: space-around;
-    border-bottom: 1px solid #FBE4D8;
+    border-bottom: 1px solid #522B5B;
     list-style: none;
+    margin: 5px;
 }
 
 ul{
@@ -48,8 +49,8 @@ li a{
 }
 
 li a:hover{
-    color: #ffffff;
-    text-shadow: 0.1em 0.1em 0.2em #ffefdb;
+    color: #854F6C;
+    text-shadow: 0.2em 0.2em 0.4em #522B5B;
     transition: 0.5s;
 }
 
@@ -60,10 +61,15 @@ main {
     padding: 50px
 }
 
-.apre {
+.apre h1{
     color: #DFB6B2;
+    font-size: 45px;
+}
+
+.apre p{
     font-size: 25px;
 }
+
 span {
     color: #854F6C;
 }
@@ -71,9 +77,64 @@ span {
 /* ______________________________________________________ */
 /* Section - Linguagens */
 
- .titulo {
-    font-size: 25px;
+ section {
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #FBE4D8;
  }
+
+ .titulo {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 1px solid #522B5B;
+    color: #854F6C;
+ }
+
+ /*_________________________________________________________ */
+ /* Responsividade */
+
+
+/* Telas médias */
+ @media screen and (max-width:1023px){
+
+  
+    
+ }
+
+ /* Telas pequenas */
+ @media screen and (max-width:767px){
+
+    /* NavBar */
+    nav {
+
+        display: flex;
+        flex-direction: column;
+        font-size:15px;
+        padding-top: 4px;
+        border-bottom: 1px solid #522B5B;
+        
+    }
+    
+
+    
+    li a{
+        font-size: 15px;
+        padding-top: 3px;
+       
+    
+    }
+
+    /* Main */
+
+    main {
+        padding: 45px;
+    }
+
+    .apre h1{
+        font-size: 25px;
+    }
+    
+    .apre p{
+        font-size: 15px;
+    }
+
+}
