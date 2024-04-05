@@ -49,12 +49,14 @@ li a{
     font-family:Open Sans;
     font-weight: 600;
     font-size: 25px;
+    transition: 0.5s;
 }
 
 li a:hover{
     color: #854F6C;
     text-shadow: 0.2em 0.2em 0.1em #522B5B;
-    transition: 0.5s;
+    /* transition: 0.5s; */
+    cursor: pointer;
 }
 
 /* ______________________________________________________ */
@@ -65,8 +67,9 @@ main {
     background-color: #522B5B;
     margin-top: 100px;
     margin-bottom: 45px;
-
 }
+
+
 
 .apre h1{
     color: #DFB6B2;
@@ -79,6 +82,26 @@ main {
 
 span {
     color: #190919;
+    animation: 7s nome infinite;
+}
+
+@keyframes nome {
+  0%{
+    color: #191919;
+  }
+
+  33% {
+    color: #6610d5;
+  }
+
+  66% {
+    color: purple;
+  }
+
+  100%{
+    color: #190919;
+  }
+  
 }
 
 /* ______________________________________________________ */
@@ -171,10 +194,10 @@ span {
 /* Section - Ferramentas */
 
   @keyframes slide {
-    from {
+    0% {
       transform: translateX(0);
     }
-    to {
+    50% {
       transform: translateX(-100%);
     }
     
@@ -189,13 +212,21 @@ span {
   .logos-slider {
     display: flex;
     flex-wrap: nowrap; 
-    animation: 5s slide infinite linear;
+    animation: 8s slide infinite linear;
   }
 
   .logos-slider img {
     height: 50px;
     margin: 0 40px;
   }
+
+   /*_________________________________________________________ */
+   /* Meus Projetos */
+
+   #titulo{
+    margin-top: 50px;
+   }
+
 
 
 
