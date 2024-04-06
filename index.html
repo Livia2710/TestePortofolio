@@ -10,22 +10,39 @@
 </head>
 <body>
 
+    <!-- ______________________________________________ -->
+    <!--  Navegação -->
+
     <nav class="fixed-top">
         <ul>
-        <li><a href="">Sobre mim</a></li>
+        <li><a href="#sobre">Sobre mim</a></li>
         <li><a href="#lin">Linguagens</a></li>
-        <li><a href="">Meus Projetos </a></li>
+        <li><a href="#proj">Meus Projetos </a></li>
        </ul>
 
     </nav>
 
-    <main>
+    <!-- Imagem -->
 
-        <div class="apre">
-            <h1>Olá, meu nome é <span>Lívia</span></h1>
-            <p> Sou desenvolvedora full-stack. </p>
-        </div>
-    </main>
+    <div class="banner">
+        <main>
+          <section class="module parallax parallax-1">
+            <h1>Meu Portifólio</h1>
+          </section>
+    
+          <section class="module content" id="sobre">
+            <div class="apre" ></div>
+                 <h1>Olá, meu nome é <span>Lívia</span></h1>
+                  <p> Sou desenvolvedora full-stack. </p>   
+            </div>
+          </section>
+    
+    
+    
+        </main>
+      </div>
+
+    
 
    
 
@@ -38,7 +55,7 @@
         <!-- 1° Fileira -->
 
         <div class="grupo">
-        <div class="card">
+        <div class="cart">
             <div class="image">
                 <img src="assets/html-lo.png" alt="logo HTML">
                 <div class="subtitulo">
@@ -49,7 +66,7 @@
         </div>
 
            
-        <div class="card" >
+        <div class="cart" >
             <div class="image">
                 <img src="assets/2-removebg-preview.png" alt="logo HTML">
                 <div class="subtitulo">
@@ -60,7 +77,7 @@
         </div>
 
            
-        <div class="card">
+        <div class="cart">
             <div class="image">
                 <img src="assets/js.png" alt="logo HTML">
                 <div class="subtitulo">
@@ -73,7 +90,7 @@
 
      <div class="grupo">
         <!-- 2° Fileira -->
-        <div class="card">
+        <div class="cart">
             <div class="image">
                 <img src="assets/php_logo.png" alt="logo HTML">
                 <div class="subtitulo">
@@ -84,7 +101,7 @@
         </div>
 
            
-        <div class="card">
+        <div class="cart">
             <div class="image">
                 <img src="assets/MySql_logo.png" alt="logo HTML">
                 <div class="subtitulo">
@@ -95,7 +112,7 @@
         </div>
 
            
-        <div class="card">
+        <div class="cart">
             <div class="image">
                 <img src="assets/c++_logo.png" alt="logo HTML">
                 <div class="subtitulo">
@@ -145,7 +162,56 @@
       <!-- ______________________________________________________________ -->
       <!-- Meus projetos -->
 
-   <h1 class="titulo" id="titulo"> Meus Projetos</h1>
+   <h1 class="h1" id="titulo"> Meus Projetos</h1>
+
+
+   <div class="wrapper" id="proj">
+    <div class="container">
+        <input type="radio" name="slide" id="c1" checked>
+        <label for="c1" class="card">
+            <div class="row">
+                <div class="icon">1</div>
+                <div class="description">
+                    <h4>Winter</h4>
+                    <p>Winter has so much to offer -
+                     creative activities</p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c2" >
+        <label for="c2" class="card">
+            <div class="row">
+                <div class="icon">2</div>
+                <div class="description">
+                    <h4>Digital Technology</h4>
+                    <p>Gets better every day -
+                     stay tuned</p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c3" >
+        <label for="c3" class="card">
+            <div class="row">
+                <div class="icon">3</div>
+                <div class="description">
+                    <h4>Globalization</h4>
+                    <p>Help people all over the world</p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c4" >
+        <label for="c4" class="card">
+            <div class="row">
+                <div class="icon">4</div>
+                <div class="description">
+                    <h4>New technologies</h4>
+                    <p>Space engineering becomes
+                     more and more advanced</p>
+                </div>
+            </div>
+        </label>
+    </div>
+</div>
 
     
 
