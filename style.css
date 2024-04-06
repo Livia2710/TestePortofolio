@@ -69,12 +69,6 @@ li a:hover{
   
 }
 
-section.module.content{
-  background-color: #522B5B;
-
-}
-
-
 section.module:last-child{
   margin-bottom: 0;
 }
@@ -97,6 +91,7 @@ section.module.parallax{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  /* Para outros tipos de navegador*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -133,22 +128,63 @@ section.module.parallax h1{
 /* ______________________________________________________ */
 /* Main */
 
-/* main {
-    padding: 50px;
+main {
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
     background-color: #522B5B;
-    margin-top: 100px;
-    margin-bottom: 45px;
+    padding: 50x;
 }
- */
+
+/* Foto */
+
+.rosto{
+  background-color: #854F6C;
+  height: 350px;
+  width: 350px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.contatos{
+  color: #522B5B;
+  background-color: #190919;
+  font-size: 25px;
+}
+
+.contatos ul{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+
+/* Apresentação */
+
+.apre{
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+  justify-content:space-around;
+
+}
+
 
 
 .apre h1{
     color: #DFB6B2;
-    font-size: 45px;
+    font-size: 55px;
 }
 
 .apre p{
-    font-size: 25px;
+    font-size: 35px;
 }
 
 span {
@@ -405,8 +441,39 @@ input:checked + label .description {
  /* Responsividade */
 
 
+
 /* Telas médias */
  @media screen and (max-width:1023px){
+
+
+
+  /* Main */
+
+   .apre h1 {
+    font-size: 35px;
+   }
+
+   .apre p {
+    font-size: 25px;
+   }
+
+      
+    .rosto{
+      height: 300px;
+      width: 350px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-right: 150px;
+    }
+
+    .contatos{
+
+      font-size: 20px;
+    }
+
+
+
+  /* Linguagens */
 
     .grupo {
         display: flex;
@@ -558,15 +625,28 @@ input:checked + label .description {
 
     /* Main */
 
+    .apre {
+      padding: 50px;
+      width: 100%;
+    }
+
+    .rosto{
+      margin-left: 150px;
+      width: 250px;
+    }
+
+    .contatos{
+      font-size: 15px;
+    }
 
 
-    .apre h1{
-        font-size: 25px;
-    }
-    
-    .apre p{
-        font-size: 15px;
-    }
+    main {
+  
+      display: flex;
+      flex-direction: column;
+      padding: 150x;
+  }
+  
 
     /* Section - Linguagens */
 
